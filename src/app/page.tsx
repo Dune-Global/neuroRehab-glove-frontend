@@ -38,17 +38,17 @@ export default function Home() {
           >
             <Menu className="h-6 w-6" />
           </button>
-          <h1 className="mx-30 font-inter text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl tracking-normal sm:tracking-wide md:tracking-wider lg:tracking-widest">
+          <h1 className="text-center w-full mx-30 font-inter text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl tracking-normal sm:tracking-wide md:tracking-wider lg:tracking-widest">
             NEUROREHAB GLOVE
           </h1>
         </div>
         {(isMenuOpen || window.innerWidth >= 640) && (
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-3 flex-wrap py-4 justify-between">
             <button
-              className="bg-red-500 p-2 px-4 text-white border border-white rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-opacity-50"
+              className="bg-green-500 p-2 px-4 text-white border border-white rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-opacity-50"
               onClick={() => {
                 setIsMenuOpen(false);
-                setIsOpen(true)
+                setIsOpen(true);
               }}
             >
               Start Therapy
@@ -58,7 +58,7 @@ export default function Home() {
                 key={fingerNumber}
                 onClick={() => {
                   setIsMenuOpen(false);
-                  router.push(`#${fingerNumber}`)
+                  router.push(`#${fingerNumber}`);
                 }}
                 className="p-2 px-4 text-white border border-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50"
               >

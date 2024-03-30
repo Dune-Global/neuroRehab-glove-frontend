@@ -86,7 +86,10 @@ const TherapyModal = (props: Props) => {
     <div>
       {calibrating ? (
         <div className="flex flex-col items-center gap-7 py-6">
-          <div>Calibrating stay still...</div>
+          <div className="flex flex-col items-center gap-7">
+            <p>Calibrating</p>
+            <p>Stay still...</p>
+          </div>
           <ProgressCircle
             value={increment}
             color="green"
@@ -121,7 +124,10 @@ const TherapyModal = (props: Props) => {
         </div>
       ) : (
         <div className="flex flex-col items-center gap-7 py-6">
-          <div>Collecting data move your Fingers</div>
+          <div className="flex flex-col items-center gap-7">
+            <p>Collecting data</p>
+            <p>Move your Fingers</p>
+          </div>
           <ProgressCircle
             value={collectingProgress}
             color="blue"
