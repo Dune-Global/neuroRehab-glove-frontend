@@ -4,10 +4,10 @@ import { ProgressCircle } from "@tremor/react";
 type Props = {};
 
 const TherapyModal = (props: Props) => {
-  const CALIBRATION_TIME = 30000; // 30000 milliseconds = 30 seconds
-  const COUNTDOWN_TIME = 1000; // 1000 milliseconds = 1 second
-  const COLLECTING_INTERVAL = 500; // 500 milliseconds = 0.5 seconds
-  const RELOAD_DELAY = 5000; // 5000 milliseconds = 5 seconds
+  const CALIBRATION_TIME = 10000; // 30000 milliseconds = 30 seconds
+  const COUNTDOWN_TIME = 500; // 1000 milliseconds = 1 second
+  const COLLECTING_INTERVAL = 900; // 500 milliseconds = 0.5 seconds
+  const RELOAD_DELAY = 10000; // 5000 milliseconds = 5 seconds
 
   const [calibrating, setCalibration] = useState(true);
   const [increment, setIncrement] = useState(0);
